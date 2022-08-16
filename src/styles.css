@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+h3{
+    color:white;
+    padding: 10px;
+}
