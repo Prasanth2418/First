@@ -1,0 +1,39 @@
+<section class="mt-3">
+    <div class="container">
+        <div class="row">
+            <p class="h3 text-danger">Contact Us </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque placeat tempora laborum cupiditate repudiandae voluptate aperiam autem. Adipisci repellendus porro corporis tenetur quibusdam omnis, dolore harum. Architecto nihil officia totam.</p>
+            <div class="col-md-4 mb-5">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <form>
+                            <label>Username</label>
+                            <input type="text"
+                            [value]="userName"
+                            (input)="update($event)"
+                            class="form-control"> 
+                            <span>{{userName}}</span>
+                            <br>
+                            <label>Password</label>
+                            <input [type]="showType" class="form-control">
+                            <input 
+                            (change)="showPassword($event)"
+                            type="checkbox" class="form-check-input">show password
+                            <br>
+                            <br>
+                            <label>Discription</label>
+                            <textarea rows="4" class="form-control" placeholder="Your text here.."
+                            [maxlength]="Maxlength"
+                            name="message"
+                            [(ngModel)]="message"
+                            ></textarea>
+                        </form>
+                        <span>Characters Remaining:{{message.length}}/{{Maxlength}}</span>
+                        
+                       </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</section>
